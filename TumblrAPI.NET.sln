@@ -6,18 +6,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TumblrAPI.NETConsole", "TumblrAPI.NETConsole\TumblrAPI.NETConsole.csproj", "{22328B49-6DCD-4073-92AB-92B36FE53BB6}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/TFS06
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = TumblrAPI.NET\\TumblrAPI.NET.csproj
-		SccProjectName1 = TumblrAPI.NET
-		SccLocalPath1 = TumblrAPI.NET
-		SccProjectUniqueName2 = TumblrAPI.NETConsole\\TumblrAPI.NETConsole.csproj
-		SccProjectName2 = TumblrAPI.NETConsole
-		SccLocalPath2 = TumblrAPI.NETConsole
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
