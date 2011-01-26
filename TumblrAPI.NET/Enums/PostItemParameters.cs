@@ -22,6 +22,8 @@
 		/// </summary>
 		public const string Generator = "generator";
 
+        public const string Group = "group";
+
 		/// <summary>
 		/// Applies to Tumblr "actions"
 		/// </summary>

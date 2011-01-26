@@ -24,7 +24,7 @@ namespace TumblrAPI.PostItems
 		{
 			if (TumblrAPI.Authentication.Status == AuthenticationStatus.Valid)
 			{
-				return Publish(Authentication.Email, Authentication.Password);
+				return Publish(Authentication.Email, Authentication.Password, "");
 			}
 			throw new InvalidOperationException(
 				"You are not authenticated.  You can call the Connect method or the Publish method and pass in your credentials.");
@@ -35,12 +35,13 @@ namespace TumblrAPI.PostItems
 		/// </summary>
 		/// <param name="email">Tumblr account email address</param>
 		/// <param name="password">Tumblr account password</param>
-		public TumblrResult Publish(string email, string password)
+		public TumblrResult Publish(string email, string password, string group)
 		{
 			var postItems = new Dictionary<string, string>(GetPostItemsInternal());
 			postItems.Add(PostItemParameters.Email, email);
 			postItems.Add(PostItemParameters.Password, password);
 			postItems.Add(PostItemParameters.Generator, "TumblrAPI.NET");
+            if (!string.IsNullOrEmpty(group)) postItems.Add(PostItemParameters.Group, group);
 
 			var request = new HttpHelper(Settings.Default.API_URL, postItems);
 

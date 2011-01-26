@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="802EE6D1-EF5F-4450-A8E8-C3E338A3A428" ModuleId="TumblrAPI.NET" />
+  <Module PersistentId="22328B49-6DCD-4073-92AB-92B36FE53BB6" ModuleId="TumblrAPI.NETConsole" />
+</Modules>
